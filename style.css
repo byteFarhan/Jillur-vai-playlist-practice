@@ -135,3 +135,60 @@ ul.ulist li:first-child a {
   transition: 0.5s;
 }
 /* css position part */
+.positionSec {
+  height: 1000px;
+  width: 1000px;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px black;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.commonDiv {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  font-size: 40px;
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+}
+.positionDiv1 {
+  background: red;
+}
+.positionDiv2 {
+  background: yellow;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.positionDiv3 {
+  background: pink;
+  top: 0;
+  left: 500px;
+}
+/* hover practice with position */
+
+.phSection {
+  text-align: center;
+}
+.phDivParent {
+  height: 250px;
+  width: 250px;
+  /* background: red; */
+  background: url(./images/bgimage.jpg) center center no-repeat scroll;
+  background-size: cover;
+  margin: auto;
+  box-shadow: 3px 3px 8px blueviolet;
+}
+.phDivChild {
+  height: 100%;
+  width: 100%;
+  background: black;
+  display: none;
+}
+
+.phDivParent:hover .phDivChild {
+  display: block;
+}
